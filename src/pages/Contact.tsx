@@ -49,6 +49,10 @@ const Contact = () => {
             transition={{ delay: 0.15 }}
             className="space-y-4"
           >
+            <div className="text-sm text-muted-foreground font-body flex items-center gap-2">
+              <Phone size={16} /> <span>9360827631</span>
+            </div>
+          >
             <Input
               placeholder="Your Name"
               value={form.name}
