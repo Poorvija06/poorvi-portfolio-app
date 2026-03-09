@@ -87,12 +87,16 @@ const Contact = () => {
               <a
                 key={s.label}
                 href={s.href}
-                target="_blank"
+                target={s.href.startsWith("tel:") ? undefined : "_blank"}
                 rel="noreferrer"
                 className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
                 aria-label={s.label}
               >
-                <s.icon size={24} />
+                {s.href.startsWith("tel:") ? (
+                  <span className="text-sm font-body">{s.label}</span>
+                ) : (
+                  <s.icon size={24} />
+                )}
               </a>
             ))}
           </motion.div>
