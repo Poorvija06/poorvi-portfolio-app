@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 const socials = [
   { icon: Linkedin, href: "https://www.linkedin.com/in/poorvija-dhanu-sri-d-b31886297", label: "LinkedIn" },
   { icon: Github, href: "https://github.com/Poorvija06", label: "GitHub" },
-  { icon: Phone, href: "https://wa.me/9360827631", label: "WhatsApp" },
+  { icon: Phone, href: "tel:9360827631", label: "9360827631" },
   { icon: Mail, href: "mailto:poorvija@gmail.com", label: "Email" },
 ];
 

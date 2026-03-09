@@ -13,8 +13,8 @@ const Footer = () => (
         <a href="https://github.com/Poorvija06" target="_blank" rel="noreferrer" className="text-nav-foreground/60 hover:text-primary transition-colors">
           <Github size={20} />
         </a>
-        <a href="https://wa.me/9360827631" target="_blank" rel="noreferrer" className="text-nav-foreground/60 hover:text-primary transition-colors">
-          <Phone size={20} />
+        <a href="tel:9360827631" className="text-nav-foreground/60 hover:text-primary transition-colors text-sm font-body">
+          9360827631
         </a>
         <a href="mailto:poorvija@gmail.com" className="text-nav-foreground/60 hover:text-primary transition-colors">
           <Mail size={20} />
