@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 const socials = [
   { icon: Linkedin, href: "https://www.linkedin.com/in/poorvija-dhanu-sri-d-b31886297", label: "LinkedIn" },
   { icon: Github, href: "https://github.com/Poorvija06", label: "GitHub" },
-  { icon: Phone, href: "https://wa.me/9360827631", label: "WhatsApp" },
+  { icon: Phone, href: "tel:9360827631", label: "9360827631" },
   { icon: Mail, href: "mailto:poorvija@gmail.com", label: "Email" },
 ];
 
@@ -87,12 +87,16 @@ const Contact = () => {
               <a
                 key={s.label}
                 href={s.href}
-                target="_blank"
+                target={s.href.startsWith("tel:") ? undefined : "_blank"}
                 rel="noreferrer"
                 className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
                 aria-label={s.label}
               >
-                <s.icon size={24} />
+                {s.href.startsWith("tel:") ? (
+                  <span className="text-sm font-body">{s.label}</span>
+                ) : (
+                  <s.icon size={24} />
+                )}
               </a>
             ))}
           </motion.div>
