@@ -52,7 +52,6 @@ const Contact = () => {
             <div className="text-sm text-muted-foreground font-body flex items-center gap-2">
               <Phone size={16} /> <span>9360827631</span>
             </div>
-          >
             <Input
               placeholder="Your Name"
               value={form.name}
